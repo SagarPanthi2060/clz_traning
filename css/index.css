@@ -1,0 +1,103 @@
+.logo {
+    height: 60px;
+    width: 60px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.work{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+
+}
+.icon{
+    border: 1px solid gray;
+    height: 40px;
+    width: 40px;
+    transform: rotate(45deg);
+    color: blue;
+}
+.info{
+    display: flex;
+    gap: 100px;
+}
+.info_title{
+    font-weight: 800;
+}
+.sub_header{
+    display: flex;
+    gap: 50px;
+    background-color: black;
+    padding: opx 20px;
+    height: 40px;
+   
+    
+}
+.sub_header a{
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    height: 100%;
+}
+.sub_header a:hover{
+    background-color: orange;
+}
+.animated{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position: relative;
+
+}
+.show{
+    height: 40px;
+    width: 0px;
+    background-color: aliceblue;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transition: all 4s ease-in-out;
+
+}
+.animated:hover .show{
+  width:100%;
+}
+
+
+svg{
+    background-color: blue;
+    width: 400px;
+}
+
+svg text{
+    font-size: 15em;
+    animation: 2s infinite alternate animatestroke;
+  ;
+}
+@keyframes animatestroke{
+    0%{
+        stroke: red;
+        stroke-width: 3;
+        fill: transparent;
+        stroke-dasharray: 0px 32% ;
+        stroke-dashoffset: 25%
+    }
+    50%{
+        stroke: red;
+        stroke-width: 3;
+        fill: transparent;
+      
+    }
+
+    80%,100%{
+        stroke: transparent;
+        stroke-width: 3;
+        fill: red; 
+        stroke-dasharray: 32% 0 ;
+        stroke-dashoffset: -25%
+    }
+}
